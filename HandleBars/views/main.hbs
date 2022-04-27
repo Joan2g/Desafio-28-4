@@ -1,0 +1,22 @@
+ <h2 class="text-center">Lista de productos con HANDLEBARS</h2>
+    <div class="container">
+        <table class="table table-bordered table-striped text-center mt-4">
+            <thead>
+                <tr class="bg-primary text-white">
+                    <th scope="col">TITLE</th>
+                    <th scope="col">PRICE</th>
+                    <th scope="col">THUMBNAIL</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each data}}
+                    <tr>
+                        <td>{{this.title}}</td>
+                        <td>$ {{this.price}}</td>
+                        <td>{{this.thumbnail}}</td>
+                    </tr>
+                {{/each}}
+            </tbody>
+            <a href="/">Volver al Formulario</a>
+        </table>
+    </div>
